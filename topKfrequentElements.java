@@ -1,4 +1,4 @@
-class Solution {
+class topKFrequentElements {
     public int[] topKFrequent(int[] nums, int k) {
         HashMap<Integer, Integer> frequencies = new HashMap<>();
         PriorityQueue<Integer> minheap = new PriorityQueue<>((a,b) -> frequencies.get(a) - frequencies.get(b));
